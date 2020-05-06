@@ -15,6 +15,7 @@ import images.Image;
 import images.ImageFactory;
 import model.Candy;
 import model.SnakeHead;
+import model.SnakeTail;
 
 public class GamePanel extends JPanel
 {
@@ -25,6 +26,7 @@ public class GamePanel extends JPanel
 	private boolean inGame = true;
 	
 	private SnakeHead snakeHead;
+	private SnakeTail snakeTail;
 	private Candy candy;
 	
 	
@@ -37,6 +39,7 @@ public class GamePanel extends JPanel
 	private void initializeVariables()
 	{
 		this.snakeHead = new SnakeHead();
+		this.snakeTail = new SnakeTail();
 		this.candy = new Candy();
 		this.backgroundImage = ImageFactory.createImage(Image.BACKGROUND);
 		this.timer = new Timer(Constants.GAME_SPEED,new GameLoop(this));
@@ -53,6 +56,7 @@ public class GamePanel extends JPanel
 	
 	private void drawPlayer(Graphics g)
 	{
+		g.drawImage(snakeTail.getImage(), snakeTail.getX(), snakeTail.getY(), this);
 		g.drawImage(snakeHead.getImage(), snakeHead.getX(), snakeHead.getY(), this);
 		/*this wskazuje na observer -> observerem jest GamePanel ktory przekazuje nam 
 		 * zaobserwowane dane i je wyswietla - tak to zrozumialem*/
@@ -105,6 +109,7 @@ public class GamePanel extends JPanel
 	{
 		//System.out.println("UPDATE");
 		this.snakeHead.move();
+		this.snakeTail.move();
 		this.candy.move();
 	}
 	

@@ -57,6 +57,7 @@ public abstract class Sprite
 	
 	public void setDead(boolean dead)
 	{
+		System.out.println("death");
 		this.dead = dead;
 	}
 	

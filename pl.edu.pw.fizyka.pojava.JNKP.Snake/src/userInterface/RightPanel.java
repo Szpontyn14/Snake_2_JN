@@ -36,8 +36,8 @@ public class RightPanel extends JPanel implements ActionListener {
 		top.setLayout(new GridLayout(4,1));
 		b1 = new JButton("Shop");
 		b2 = new JButton("Scores");
-		b3 = new JButton("Other");
-		f1 = new JTextField("JTextField");
+		b3 = new JButton("More");
+		f1 = new JTextField("");
 		
 		top.add(b1);
 		top.add(b2);

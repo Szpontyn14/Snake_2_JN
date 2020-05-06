@@ -25,7 +25,7 @@ public class GameMainFrame extends JFrame
 		add(new RightPanel(), BorderLayout.LINE_END);
 		
 		setTitle(Constants.TITLE);
-		setIconImage(ImageFactory.createImage(Image.SNAKEHEAD).getImage());
+		setIconImage(ImageFactory.createImage(Image.SNAKEHEAD100r).getImage());
 		
 		pack();//dzieki temu i add(new GamePanel()) upewniamy sie, ze okno
 		//bedzie w takim rozmiarze jak chcemy w GamePanel
