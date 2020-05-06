@@ -15,8 +15,11 @@ public class ImageFactory
 		case CANDY:
 			imageIcon = new ImageIcon(Constants.CANDY_IMAGE_URL);
 			break;
-		case SNAKE:
-			imageIcon = new ImageIcon(Constants.SNAKE_IMAGE_URL);
+		case SNAKEHEAD:
+			imageIcon = new ImageIcon(Constants.SNAKEHEAD_IMAGE_URL);
+			break;
+		case SNAKETAIL:
+			imageIcon = new ImageIcon(Constants.SNAKETAIL_IMAGE_URL);
 			break;
 		case BACKGROUND:
 			imageIcon = new ImageIcon(Constants.BACKGROUND_IMAGE_URL);

@@ -6,7 +6,7 @@ import userInterface.GameMainFrame;
 
 public class App
 {
-	public static void main(String[] args)
+	public static void main(String[] args) //wielowatkowosc, nie rozumiem tego
 	{
 		EventQueue.invokeLater( () ->
 		{
